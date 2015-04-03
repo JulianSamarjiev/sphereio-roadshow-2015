@@ -1,3 +1,163 @@
+/*****************************************************************************/
+/*
+/* TEMPORARY STYLING - FOR DEVELOPMENT PURPOSES
+/*
+/*****************************************************************************/
+
 body {
-	background-color: tomato;
+  height: 2000px;
 }
+
+/*****************************************************************************/
+/*
+/* GENERAL STYLING
+/*
+/*****************************************************************************/
+
+
+
+/*****************************************************************************/
+/*
+/* COLORS
+/*
+/*****************************************************************************/
+
+$white: #FFF;
+$black: #000;
+$ct-green: #00ba9f;
+$ct-yellow: #ffba27;
+
+/*****************************************************************************/
+/*
+/* NAVIGATION
+/*
+/*****************************************************************************/
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+  padding-top: 0.5em;
+}
+
+.ct-logo {
+  width: 25px;
+  padding: 15px 0px;
+  vertical-align: initial;
+}
+
+.navbar-inverse {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  border: none;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: darken($white, 35%);
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: $white;
+}
+
+.navbar-inverse .navbar-nav .reg-button-small {
+  background: transparent;
+  border: 1px solid $ct-yellow;
+  color: $ct-yellow;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.navbar-inverse .navbar-nav .reg-button-small:hover {
+  background: $ct-yellow;
+  color: #222222;
+}
+
+/*****************************************************************************/
+/*
+/* HEADER
+/*
+/*****************************************************************************/
+
+#header {
+  padding-top: 80px;
+  background: lighten($black, 20%) url('../../img/roadshow-key-visual.jpg') no-repeat fixed center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.main-title {
+  color: $white;
+  font-size: 72px;
+  text-transform: uppercase;
+  margin-top: 2em;
+}
+
+.sub-title {
+  color: darken($white, 30%);
+  font-size: 50px;
+}
+
+.dates-info,
+.cities-info {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.dates-info {
+  color: darken($white, 30%);
+  font-size: 35px;
+}
+
+.cities-info {
+  color: $white;
+  font-size: 35px;
+}
+
+.reg-button-big {
+  background: transparent;
+  color: $ct-yellow;
+  border: 1px solid $ct-yellow;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 3px;
+  margin-top: 4em;
+}
+
+.reg-button-big:hover {
+  background: $ct-yellow;
+  color: #222222;
+  border: none;
+}
+
+/*****************************************************************************/
+/*
+/* DIE ROADSHOW
+/*
+/*****************************************************************************/
+
+.lighter-p {
+  color: lighten($black, 40%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
