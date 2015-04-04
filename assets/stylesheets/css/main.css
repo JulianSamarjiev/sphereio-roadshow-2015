@@ -1,16 +1,17 @@
 /*****************************************************************************/
 /*
-/* TEMPORARY STYLING - FOR DEVELOPMENT PURPOSES
+/* TYPOGRAPHY
 /*
 /*****************************************************************************/
-body {
-  height: 20000px; }
-
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
 /*****************************************************************************/
 /*
 /* GENERAL STYLING
 /*
 /*****************************************************************************/
+body {
+  font-family: 'Source Sans Pro', sans-serif; }
+
 /*****************************************************************************/
 /*
 /* COLORS
@@ -31,13 +32,12 @@ body {
 
 .ct-logo {
   width: 25px;
-  padding: 15px 0px;
-  vertical-align: initial; }
+  padding: 15px 0px; }
 
 .navbar-inverse {
   text-transform: uppercase;
   text-align: center;
-  font-size: 12px;
+  font-size: 1.1em;
   font-weight: 400;
   border: none; }
 
@@ -58,6 +58,9 @@ body {
   background: #ffba27;
   color: #222222; }
 
+.navbar-toggle {
+  margin: 12px 15px 8px 0; }
+
 /*****************************************************************************/
 /*
 /* HEADER
@@ -66,7 +69,6 @@ body {
 #header {
   padding-top: 80px;
   background: #333333 url("../../img/roadshow-key-visual.jpg") no-repeat fixed center;
-  background-size: cover;
   height: 100vh; }
 
 .main-title {
@@ -99,7 +101,8 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 3px;
-  margin-top: 4em; }
+  margin-top: 4em;
+  font-size: 1.5em; }
 
 .reg-button-big:hover {
   background: #ffba27;
@@ -111,11 +114,16 @@ body {
 /* ABOUT
 /*
 /*****************************************************************************/
+#about {
+  padding: 3em 0; }
+
 .about-title {
   text-align: center; }
 
 .lighter-p {
-  color: #666666; }
+  color: #595959;
+  font-size: 1.4em;
+  font-weight: 200; }
 
 /*****************************************************************************/
 /*
@@ -123,7 +131,7 @@ body {
 /*
 /*****************************************************************************/
 #timeline {
-  padding: 0 0 40px;
+  padding: 3em 0;
   text-align: center;
   background: #b3b3b3; }
 
@@ -287,8 +295,13 @@ body {
 /* LOCATIONS
 /*
 /*****************************************************************************/
+#locations {
+  background: #1e2430;
+  padding: 3em 0; }
+
 #locations h2 {
-  color: #FFF; }
+  color: #FFF;
+  padding-bottom: 1em; }
 
 .icon-cities {
   width: 100px; }
@@ -296,7 +309,7 @@ body {
 .locations-text {
   padding: 20px 0;
   color: #FFF;
-  font-size: 1.2em; }
+  font-size: 1.4em; }
 
 .locations-towns {
   color: #00ba9f; }
@@ -304,10 +317,68 @@ body {
 .locations-url {
   color: #ffba27; }
 
-#locations {
-  background: #1e2430; }
-
 .reg-button-locations {
-  margin: 2em 0; }
+  margin: 1em 0; }
+
+/*****************************************************************************/
+/*
+/* CONTACT
+/*
+/*****************************************************************************/
+#contact {
+  color: #FFF;
+  background: #333333 url("../../img/contact-bg.jpg") no-repeat;
+  padding: 3em 0; }
+
+.contact-title {
+  font-size: 2em;
+  padding: 20px 0;
+  margin: 0; }
+
+.contact-text {
+  font-size: 1.4em;
+  font-weight: 200;
+  padding: 20px 0; }
+
+/*****************************************************************************/
+/*
+/* SOCIAL LINKS
+/*
+/*****************************************************************************/
+#social-links {
+  padding: 3em 0;
+  font-size: 1.4em; }
+
+.social-icons {
+  width: 50px; }
+
+.impressum-link {
+  color: #ffba27; }
+
+/*****************************************************************************/
+/*
+/* MEDIA QUERIES
+/*
+/*****************************************************************************/
+@media screen and (max-width: 991px) {
+  .main-title {
+    font-size: 4em;
+    margin-top: 1em; }
+
+  .sub-title {
+    font-size: 3.5em; }
+
+  .dates-info,
+  .cities-info {
+    margin-top: 1.5em; } }
+@media screen and (max-width: 495px) {
+  .sub-title {
+    font-size: 3em; } }
+@media screen and (max-width: 434px) {
+  .main-title {
+    font-size: 3em; }
+
+  .sub-title {
+    font-size: 2.5em; } }
 
 /*# sourceMappingURL=main.css.map */

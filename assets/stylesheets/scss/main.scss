@@ -1,12 +1,11 @@
+
 /*****************************************************************************/
 /*
-/* TEMPORARY STYLING - FOR DEVELOPMENT PURPOSES
+/* TYPOGRAPHY
 /*
 /*****************************************************************************/
 
-body {
-  height: 20000px;
-}
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
 
 /*****************************************************************************/
 /*
@@ -14,7 +13,9 @@ body {
 /*
 /*****************************************************************************/
 
-
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
 
 /*****************************************************************************/
 /*
@@ -47,13 +48,12 @@ $dark-blue: #3B475F;
 .ct-logo {
   width: 25px;
   padding: 15px 0px;
-  vertical-align: initial;
 }
 
 .navbar-inverse {
   text-transform: uppercase;
   text-align: center;
-  font-size: 12px;
+  font-size: 1.1em;
   font-weight: 400;
   border: none;
 }
@@ -79,6 +79,10 @@ $dark-blue: #3B475F;
   color: #222222;
 }
 
+.navbar-toggle {
+  margin: 12px 15px 8px 0;
+}
+
 /*****************************************************************************/
 /*
 /* HEADER
@@ -88,7 +92,6 @@ $dark-blue: #3B475F;
 #header {
   padding-top: 80px;
   background: lighten($black, 20%) url('../../img/roadshow-key-visual.jpg') no-repeat fixed center;
-  background-size: cover;
   height: 100vh;
 }
 
@@ -128,6 +131,7 @@ $dark-blue: #3B475F;
   text-transform: uppercase;
   border-radius: 3px;
   margin-top: 4em;
+  font-size: 1.5em;
 }
 
 .reg-button-big:hover {
@@ -142,12 +146,19 @@ $dark-blue: #3B475F;
 /*
 /*****************************************************************************/
 
+#about {
+  padding: 3em 0;
+}
+
 .about-title {
   text-align: center;
+
 }
 
 .lighter-p {
-  color: lighten($black, 40%);
+  color: lighten($black, 35%);
+  font-size: 1.4em;
+  font-weight: 200;
 }
 
 /*****************************************************************************/
@@ -157,7 +168,7 @@ $dark-blue: #3B475F;
 /*****************************************************************************/
 
 #timeline {
-  padding: 0 0 40px;
+  padding: 3em 0;
   text-align: center;
   background: darken($white, 30%);
 }
@@ -323,8 +334,14 @@ $dark-blue: #3B475F;
 /*
 /*****************************************************************************/
 
+#locations {
+  background: darken($dark-blue, 15%);
+  padding: 3em 0;
+}
+
 #locations h2 {
   color: $white;
+  padding-bottom: 1em;
 }
 
 .icon-cities {
@@ -334,7 +351,7 @@ $dark-blue: #3B475F;
 .locations-text {
   padding: 20px 0;
   color: $white;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .locations-towns {
@@ -345,13 +362,93 @@ $dark-blue: #3B475F;
   color: $ct-yellow;
 }
 
-#locations {
-  background: darken($dark-blue, 15%);
+.reg-button-locations {
+  margin: 1em 0;
 }
 
-.reg-button-locations {
-  margin: 2em 0;
+/*****************************************************************************/
+/*
+/* CONTACT
+/*
+/*****************************************************************************/
+
+#contact {
+  color: $white;
+  background: lighten($black, 20%) url('../../img/contact-bg.jpg') no-repeat;
+  padding: 3em 0;
 }
+
+.contact-title {
+  font-size: 2em;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.contact-text {
+  font-size: 1.4em;
+  font-weight: 200;
+  padding: 20px 0;
+}
+
+/*****************************************************************************/
+/*
+/* SOCIAL LINKS
+/*
+/*****************************************************************************/
+
+#social-links {
+  padding: 3em 0;
+  font-size: 1.4em;
+}
+
+// .sphere-logo::before {
+//   content: url('../../img/commercetools_cube.svg');
+// }
+
+.social-icons {
+  width: 50px;
+}
+
+.impressum-link {
+  color: $ct-yellow;
+}
+
+/*****************************************************************************/
+/*
+/* MEDIA QUERIES
+/*
+/*****************************************************************************/
+
+@media screen and (max-width: 991px) {
+  .main-title {
+    font-size: 4em;
+    margin-top: 1em; 
+  }
+  .sub-title {
+    font-size: 3.5em;
+  }
+  .dates-info,
+  .cities-info {
+  margin-top: 1.5em;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .sub-title {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 434px) {
+  .main-title {
+    font-size: 3em;
+  }
+  .sub-title {
+    font-size: 2.5em;
+  }
+}
+
+
 
 
 
