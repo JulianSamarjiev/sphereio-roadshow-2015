@@ -17,6 +17,12 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+a:hover, a:active, a:focus, a:link, a:visited {
+  text-decoration: none;
+  background: none;
+  border: none;
+}
+
 /*****************************************************************************/
 /*
 /* COLORS
@@ -137,7 +143,6 @@ $dark-blue: #3B475F;
 .reg-button-big:hover {
   background: $ct-yellow;
   color: #222222;
-  border: none;
 }
 
 /*****************************************************************************/
@@ -348,6 +353,7 @@ $dark-blue: #3B475F;
   padding: 20px 0;
   color: $white;
   font-size: 1.4em;
+  height: 10em;
 }
 
 .locations-towns {
@@ -393,13 +399,17 @@ $dark-blue: #3B475F;
 /*****************************************************************************/
 
 #social-links {
-  padding: 2.5em 0;
+  padding: 1em 0;
   font-size: 1.4em;
 }
 
-// .sphere-logo::before {
-//   content: url('../../img/commercetools_cube.svg');
-// }
+.sphere-logo::before {
+  content: url('../../img/commercetools_cube.svg');
+  display: inline-block;
+  width: 25px;
+  vertical-align: middle;
+  margin-right: 0.6em;
+}
 
 .social-icons {
   width: 50px;
@@ -407,6 +417,10 @@ $dark-blue: #3B475F;
 
 .impressum-link {
   color: $ct-yellow;
+}
+
+.impressum-link:hover {
+  color: $ct-green;
 }
 
 /*****************************************************************************/
@@ -426,6 +440,13 @@ $dark-blue: #3B475F;
   .dates-info,
   .cities-info {
   margin-top: 1.5em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ct-logo {
+    float: left;
+    margin-left: 2em;
   }
 }
 

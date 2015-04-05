@@ -12,6 +12,11 @@
 body {
   font-family: 'Source Sans Pro', sans-serif; }
 
+a:hover, a:active, a:focus, a:link, a:visited {
+  text-decoration: none;
+  background: none;
+  border: none; }
+
 /*****************************************************************************/
 /*
 /* COLORS
@@ -106,8 +111,7 @@ body {
 
 .reg-button-big:hover {
   background: #ffba27;
-  color: #222222;
-  border: none; }
+  color: #222222; }
 
 /*****************************************************************************/
 /*
@@ -305,7 +309,8 @@ body {
 .locations-text {
   padding: 20px 0;
   color: #FFF;
-  font-size: 1.4em; }
+  font-size: 1.4em;
+  height: 10em; }
 
 .locations-towns {
   color: #00ba9f; }
@@ -342,14 +347,24 @@ body {
 /*
 /*****************************************************************************/
 #social-links {
-  padding: 2.5em 0;
+  padding: 1em 0;
   font-size: 1.4em; }
+
+.sphere-logo::before {
+  content: url("../../img/commercetools_cube.svg");
+  display: inline-block;
+  width: 25px;
+  vertical-align: middle;
+  margin-right: 0.6em; }
 
 .social-icons {
   width: 50px; }
 
 .impressum-link {
   color: #ffba27; }
+
+.impressum-link:hover {
+  color: #00ba9f; }
 
 /*****************************************************************************/
 /*
@@ -367,6 +382,10 @@ body {
   .dates-info,
   .cities-info {
     margin-top: 1.5em; } }
+@media screen and (max-width: 767px) {
+  .ct-logo {
+    float: left;
+    margin-left: 2em; } }
 @media screen and (max-width: 495px) {
   .sub-title {
     font-size: 3em; } }
