@@ -231,7 +231,7 @@ body {
 #timeline .timeline-wrapper .timeline-info h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1em;
   line-height: 32px;
   margin-top: 5px; }
 
@@ -243,9 +243,8 @@ body {
   position: relative; }
 
 #timeline .timeline-wrapper .timeline-date p {
-  color: #f46464;
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
+  font-size: 1em;
   font-weight: 400; }
 
 #timeline .timeline-wrapper .timeline-date p span {
@@ -263,9 +262,6 @@ body {
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
   border: 3px solid #f0f1f2; }
-
-#timeline .inverted .timeline-date:after {
-  left: -7px; }
 
 #timeline .download-button {
   font-family: "Montserrat", sans-serif;
