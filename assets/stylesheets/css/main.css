@@ -251,7 +251,7 @@ body {
   color: #3b475f; }
 
 #timeline .timeline-wrapper .timeline-date:after {
-  background-color: #3b475f;
+  background-color: #00ba9f;
   content: '';
   position: absolute;
   top: 40px;
@@ -323,7 +323,7 @@ body {
 /*****************************************************************************/
 #contact {
   color: #FFF;
-  background: #333333 url("../../img/contact-bg.jpg") no-repeat;
+  background: #333333 url("../../img/roadshow-key-visual.jpg") no-repeat fixed center;
   padding: 3em 0; }
 
 .contact-title {

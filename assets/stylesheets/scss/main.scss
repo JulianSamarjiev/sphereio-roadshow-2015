@@ -288,7 +288,7 @@ $dark-blue: #3B475F;
   color: #3b475f;
 }
 #timeline .timeline-wrapper .timeline-date:after {
-  background-color: #3b475f;
+  background-color: $ct-green;
   content: '';
   position: absolute;
   top: 40px;
@@ -370,7 +370,7 @@ $dark-blue: #3B475F;
 
 #contact {
   color: $white;
-  background: lighten($black, 20%) url('../../img/contact-bg.jpg') no-repeat;
+  background: lighten($black, 20%) url('../../img/roadshow-key-visual.jpg') no-repeat fixed center;
   padding: 3em 0;
 }
 
