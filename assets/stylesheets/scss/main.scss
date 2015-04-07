@@ -66,7 +66,7 @@ $dark-blue: #3B475F;
 }
 
 .navbar-inverse .navbar-nav>li>a {
-  color: darken($white, 35%);
+  color: darken($white, 20%);
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
@@ -176,14 +176,14 @@ $dark-blue: #3B475F;
 /*****************************************************************************/
 
 #timeline {
-  padding: 3em 0;
+  background: darken($white, 5%);
+  padding: 40px 0;
   text-align: center;
-  background: darken($white, 30%);
 }
 #timeline .nav-tabs {
   display: inline-block;
   border: none;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 #timeline .nav-tabs li {
   width: 180px;
@@ -191,14 +191,13 @@ $dark-blue: #3B475F;
   margin-right: 20px;
 }
 #timeline .nav-tabs li a {
-  color: #a8b4c1;
-  font-family: "Montserrat", sans-serif;
+  color: $black;
   font-size: 14px;
   line-height: 46px;
   width: 180px;
   padding: 0;
-  border: 2px solid #f4f6f8;
-  border-radius: 5px;
+  border: 1px solid $black;
+  border-radius: 3px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
   text-transform: uppercase;
@@ -206,10 +205,10 @@ $dark-blue: #3B475F;
           transition: all .5s;
 }
 #timeline .nav-tabs .active a {
-  background-color: #f4f6f8;
+  background-color: $ct-green;
   color: #1f2429;
   line-height: 50px;
-  border: none;
+  border: 1px solid;
 }
 #timeline .tab-pane {
   -webkit-transition: all .5s;
@@ -217,11 +216,11 @@ $dark-blue: #3B475F;
 }
 #timeline .timeline-wrapper {
   position: relative;
-  margin-top: 40px;
+  margin-top: 60px;
   padding-bottom: 40px;
 }
 #timeline .timeline-wrapper:before {
-  background-color: #f0f1f2;
+  background-color: #fff;
   content: '';
   position: absolute;
   top: 0;
@@ -230,9 +229,6 @@ $dark-blue: #3B475F;
   width: 2px;
 }
 #timeline .timeline-wrapper .date-container {
-  background-color: #fff;
-  border: 2px solid #f0f1f2;
-  padding: 5px;
   width: 75px;
   height: 75px;
   position: relative;
@@ -243,8 +239,7 @@ $dark-blue: #3B475F;
 }
 #timeline .timeline-wrapper .date-container .date {
   color: #fff;
-  background-color: #3b475f;
-  font-family: "Montserrat", sans-serif;
+  background-color: $ct-green;
   font-size: 24px;
   font-weight: 400;
   width: 60px;
@@ -270,13 +265,11 @@ $dark-blue: #3B475F;
   padding: 0 40px;
 }
 #timeline .timeline-wrapper .timeline-info span {
-  font-family: "Merriweather", sans-serif;
   font-style: italic;
 }
 #timeline .timeline-wrapper .timeline-info h3 {
-  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 16px;
   line-height: 32px;
   margin-top: 5px;
 }
@@ -288,8 +281,7 @@ $dark-blue: #3B475F;
   position: relative;
 }
 #timeline .timeline-wrapper .timeline-date p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1em;
+  font-size: 16px;
   font-weight: 400;
 }
 #timeline .timeline-wrapper .timeline-date p span {
@@ -306,10 +298,12 @@ $dark-blue: #3B475F;
   border-radius: 50%;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
-  border: 3px solid #f0f1f2;
+  border: 3px solid #fff;
+}
+#timeline .inverted .timeline-date:after {
+  left: -7px;
 }
 #timeline .download-button {
-  font-family: "Montserrat", sans-serif;
   display: block;
   height: 60px;
   width: 220px;
@@ -318,7 +312,6 @@ $dark-blue: #3B475F;
   text-decoration: none;
   background-color: #3b475f;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
   border-radius: 3px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
@@ -357,6 +350,7 @@ $dark-blue: #3B475F;
   color: $white;
   font-size: 1.4em;
   height: 10em;
+  margin-bottom: 50px;
 }
 
 .locations-towns {
@@ -406,12 +400,10 @@ $dark-blue: #3B475F;
   font-size: 1.4em;
 }
 
-.sphere-logo::before {
-  content: url('../../img/commercetools_cube.svg');
-  display: inline-block;
-  width: 25px;
-  vertical-align: middle;
-  margin-right: 0.6em;
+.sphere-logo {
+  max-width: 300px;
+  max-height: 300px;
+  padding-bottom: 1em;
 }
 
 .social-icons {

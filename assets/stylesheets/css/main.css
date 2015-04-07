@@ -48,7 +48,7 @@ a:hover, a:active, a:focus, a:link, a:visited {
   border: none; }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #a6a6a6; }
+  color: #cccccc; }
 
 .navbar-inverse .navbar-nav > li > a:hover {
   color: #FFF; }
@@ -138,14 +138,14 @@ a:hover, a:active, a:focus, a:link, a:visited {
 /*
 /*****************************************************************************/
 #timeline {
-  padding: 3em 0;
-  text-align: center;
-  background: #b3b3b3; }
+  background: #f2f2f2;
+  padding: 40px 0;
+  text-align: center; }
 
 #timeline .nav-tabs {
   display: inline-block;
   border: none;
-  margin-top: 20px; }
+  margin-top: 60px; }
 
 #timeline .nav-tabs li {
   width: 180px;
@@ -153,14 +153,13 @@ a:hover, a:active, a:focus, a:link, a:visited {
   margin-right: 20px; }
 
 #timeline .nav-tabs li a {
-  color: #a8b4c1;
-  font-family: "Montserrat", sans-serif;
+  color: #000;
   font-size: 14px;
   line-height: 46px;
   width: 180px;
   padding: 0;
-  border: 2px solid #f4f6f8;
-  border-radius: 5px;
+  border: 1px solid #000;
+  border-radius: 3px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
   text-transform: uppercase;
@@ -168,10 +167,10 @@ a:hover, a:active, a:focus, a:link, a:visited {
   transition: all .5s; }
 
 #timeline .nav-tabs .active a {
-  background-color: #f4f6f8;
+  background-color: #00ba9f;
   color: #1f2429;
   line-height: 50px;
-  border: none; }
+  border: 1px solid; }
 
 #timeline .tab-pane {
   -webkit-transition: all .5s;
@@ -179,11 +178,11 @@ a:hover, a:active, a:focus, a:link, a:visited {
 
 #timeline .timeline-wrapper {
   position: relative;
-  margin-top: 40px;
+  margin-top: 60px;
   padding-bottom: 40px; }
 
 #timeline .timeline-wrapper:before {
-  background-color: #f0f1f2;
+  background-color: #fff;
   content: '';
   position: absolute;
   top: 0;
@@ -192,9 +191,6 @@ a:hover, a:active, a:focus, a:link, a:visited {
   width: 2px; }
 
 #timeline .timeline-wrapper .date-container {
-  background-color: #fff;
-  border: 2px solid #f0f1f2;
-  padding: 5px;
   width: 75px;
   height: 75px;
   position: relative;
@@ -205,8 +201,7 @@ a:hover, a:active, a:focus, a:link, a:visited {
 
 #timeline .timeline-wrapper .date-container .date {
   color: #fff;
-  background-color: #3b475f;
-  font-family: "Montserrat", sans-serif;
+  background-color: #00ba9f;
   font-size: 24px;
   font-weight: 400;
   width: 60px;
@@ -232,13 +227,11 @@ a:hover, a:active, a:focus, a:link, a:visited {
   padding: 0 40px; }
 
 #timeline .timeline-wrapper .timeline-info span {
-  font-family: "Merriweather", sans-serif;
   font-style: italic; }
 
 #timeline .timeline-wrapper .timeline-info h3 {
-  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 1em;
+  font-size: 16px;
   line-height: 32px;
   margin-top: 5px; }
 
@@ -250,8 +243,7 @@ a:hover, a:active, a:focus, a:link, a:visited {
   position: relative; }
 
 #timeline .timeline-wrapper .timeline-date p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1em;
+  font-size: 16px;
   font-weight: 400; }
 
 #timeline .timeline-wrapper .timeline-date p span {
@@ -268,10 +260,12 @@ a:hover, a:active, a:focus, a:link, a:visited {
   border-radius: 50%;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
-  border: 3px solid #f0f1f2; }
+  border: 3px solid #fff; }
+
+#timeline .inverted .timeline-date:after {
+  left: -7px; }
 
 #timeline .download-button {
-  font-family: "Montserrat", sans-serif;
   display: block;
   height: 60px;
   width: 220px;
@@ -280,7 +274,6 @@ a:hover, a:active, a:focus, a:link, a:visited {
   text-decoration: none;
   background-color: #3b475f;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
   border-radius: 3px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
@@ -313,7 +306,8 @@ a:hover, a:active, a:focus, a:link, a:visited {
   padding: 20px 0;
   color: #FFF;
   font-size: 1.4em;
-  height: 10em; }
+  height: 10em;
+  margin-bottom: 50px; }
 
 .locations-towns {
   color: #00ba9f; }
@@ -353,12 +347,10 @@ a:hover, a:active, a:focus, a:link, a:visited {
   padding: 1em 0;
   font-size: 1.4em; }
 
-.sphere-logo::before {
-  content: url("../../img/commercetools_cube.svg");
-  display: inline-block;
-  width: 25px;
-  vertical-align: middle;
-  margin-right: 0.6em; }
+.sphere-logo {
+  max-width: 300px;
+  max-height: 300px;
+  padding-bottom: 1em; }
 
 .social-icons {
   width: 50px; }
