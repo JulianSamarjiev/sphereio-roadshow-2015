@@ -158,7 +158,7 @@ a:hover, a:active, a:focus, a:link, a:visited {
   line-height: 46px;
   width: 180px;
   padding: 0;
-  border: 1px solid #000;
+  border: 1px solid #b3b3b3;
   border-radius: 3px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
