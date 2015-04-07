@@ -180,35 +180,13 @@ $dark-blue: #3B475F;
   padding: 40px 0;
   text-align: center;
 }
-#timeline .nav-tabs {
-  display: inline-block;
-  border: none;
-  margin-top: 60px;
+#timeline .timeline-btn {
+  background: transparent;
+  border: 1px solid lighten($black, 20%);
 }
-#timeline .nav-tabs li {
-  width: 180px;
-  height: 50px;
-  margin-right: 20px;
-}
-#timeline .nav-tabs li a {
-  color: $black;
-  font-size: 14px;
-  line-height: 46px;
-  width: 180px;
-  padding: 0;
-  border: 1px solid lighten($black, 70%);
-  border-radius: 3px;
-  background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */
-  text-transform: uppercase;
-  -webkit-transition: all .5s;
-          transition: all .5s;
-}
-#timeline .nav-tabs .active a {
-  background-color: $ct-green;
-  color: #1f2429;
-  line-height: 50px;
-  border: 1px solid;
+#timeline .timeline-btn:hover,
+#timeline .timeline-btn:active {
+  background: $ct-green;
 }
 #timeline .tab-pane {
   -webkit-transition: all .5s;
