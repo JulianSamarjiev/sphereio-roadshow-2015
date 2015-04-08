@@ -104,22 +104,34 @@ $dark-blue: #3B475F;
   height: 100vh;
 }
 
+.ct-presents {
+  color: $ct-yellow;
+  font-size: 3em;
+  margin-top: 1.5em;
+}
+
 .main-title {
   color: $white;
   font-size: 72px;
   text-transform: uppercase;
-  margin-top: 2em;
+  margin-top: 0.1em;
 }
 
 .sub-title {
-  color: darken($white, 30%);
-  font-size: 50px;
+  color: darken($white, 5%);
+  font-size: 3em;
+  margin: 0.1em 0;
+}
+
+.sub-title-two {
+  font-size: 2em;
+  color: darken($white, 15%);
 }
 
 .dates-info,
 .cities-info {
   text-align: center;
-  margin-top: 2em;
+  margin: 0.5em 0;
 }
 
 .dates-info {
@@ -163,10 +175,24 @@ $dark-blue: #3B475F;
 
 }
 
+.about-sub-title {
+  font-size: 1.5em;
+}
+
+.bulletpoints-title {
+  font-size: 1.4em;
+  color: $ct-green;
+}
+
 .lighter-p {
   color: lighten($black, 35%);
   font-size: 1.4em;
   font-weight: 200;
+}
+
+.glyphicon-ok {
+  color: $ct-yellow;
+  padding-right: 1em;
 }
 
 /*****************************************************************************/
@@ -387,7 +413,7 @@ $dark-blue: #3B475F;
 }
 
 .social-icons {
-  width: 50px;
+  width: 50px
 }
 
 .impressum-link {
@@ -407,14 +433,20 @@ $dark-blue: #3B475F;
 @media screen and (max-width: 991px) {
   .main-title {
     font-size: 4em;
-    margin-top: 1em; 
+    margin-top: 0.1em; 
   }
   .sub-title {
-    font-size: 3.5em;
+    font-size: 3em;
+  }
+  .sub-title-two {
+    font-size: 1.8em;
   }
   .dates-info,
   .cities-info {
   margin-top: 1.5em;
+  }
+  .ct-presents {
+    font-size: 2.5em;
   }
 }
 
@@ -422,6 +454,19 @@ $dark-blue: #3B475F;
   .ct-logo {
     float: left;
     margin-left: 2em;
+  }
+  .main-title {
+    font-size: 3em;
+  }
+  .sub-title {
+    font-size: 2em;
+  }
+  .sub-title-two {
+    font-size: 1.5em;
+  }
+  .dates-info,
+  .cities-info {
+    font-size: 1.5em;
   }
 }
 
@@ -437,6 +482,9 @@ $dark-blue: #3B475F;
   }
   .sub-title {
     font-size: 2.5em;
+  }
+  .ct-presents {
+    font-size: 2em;
   }
 }
 
