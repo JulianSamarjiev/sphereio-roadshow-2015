@@ -144,10 +144,11 @@ a:hover, a:active, a:focus, a:link, a:visited {
 
 #timeline .timeline-btn {
   background: transparent;
-  border: 1px solid #333333; }
+  border: 1px solid #999999;
+  border-radius: 3px; }
 
 #timeline .timeline-btn:hover,
-#timeline .timeline-btn:active {
+#timeline .timeline-btn.active {
   background: #00ba9f; }
 
 #timeline .tab-pane {
