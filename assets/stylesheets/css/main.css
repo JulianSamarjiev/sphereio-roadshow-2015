@@ -353,7 +353,7 @@ a:hover, a:active, a:focus, a:link, a:visited {
 /*
 /*****************************************************************************/
 #social-links {
-  padding: 1em 0; }
+  padding: 2em 0 1em; }
 
 .sphere-logo {
   max-width: 200px; }
