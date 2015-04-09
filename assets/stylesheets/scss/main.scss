@@ -452,18 +452,32 @@ $dark-blue: #3B475F;
     font-size: 3em;
   }
   .sub-title-two {
-    font-size: 1.8em;
+    display: none;
   }
   .dates-info,
   .cities-info {
-  margin-top: 1.5em;
+  margin-top: 1em;
   }
   .ct-presents {
     font-size: 2.5em;
+    margin-top: 0;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-height: 770px) {
+  .sub-title-two {
+    display: none;
+  }
+  .dates-info,
+  .cities-info {
+    margin-bottom: 0;
+  }
+  .reg-button-big {
+    margin-top: 1.5em;
+  }
+}
+
+@media screen and (max-width: 765px) {
   .ct-logo {
     float: left;
     margin-left: 2em;
@@ -472,10 +486,10 @@ $dark-blue: #3B475F;
     font-size: 3em;
   }
   .sub-title {
-    font-size: 2em;
+    display: none;
   }
   .sub-title-two {
-    font-size: 1.5em;
+    display: none;
   }
   .dates-info,
   .cities-info {
@@ -485,7 +499,7 @@ $dark-blue: #3B475F;
 
 @media screen and (max-width: 495px) {
   .sub-title {
-    font-size: 3em;
+    display: none;
   }
 }
 
@@ -494,9 +508,12 @@ $dark-blue: #3B475F;
     font-size: 3em;
   }
   .sub-title {
-    font-size: 2.5em;
+    display: none;
   }
   .ct-presents {
+    font-size: 2em;
+  }
+  .about-title {
     font-size: 2em;
   }
 }

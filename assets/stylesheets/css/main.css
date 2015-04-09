@@ -386,15 +386,26 @@ a:hover, a:active, a:focus, a:link, a:visited {
     font-size: 3em; }
 
   .sub-title-two {
-    font-size: 1.8em; }
+    display: none; }
 
   .dates-info,
   .cities-info {
-    margin-top: 1.5em; }
+    margin-top: 1em; }
 
   .ct-presents {
-    font-size: 2.5em; } }
-@media screen and (max-width: 767px) {
+    font-size: 2.5em;
+    margin-top: 0; } }
+@media screen and (max-height: 770px) {
+  .sub-title-two {
+    display: none; }
+
+  .dates-info,
+  .cities-info {
+    margin-bottom: 0; }
+
+  .reg-button-big {
+    margin-top: 1.5em; } }
+@media screen and (max-width: 765px) {
   .ct-logo {
     float: left;
     margin-left: 2em; }
@@ -403,25 +414,28 @@ a:hover, a:active, a:focus, a:link, a:visited {
     font-size: 3em; }
 
   .sub-title {
-    font-size: 2em; }
+    display: none; }
 
   .sub-title-two {
-    font-size: 1.5em; }
+    display: none; }
 
   .dates-info,
   .cities-info {
     font-size: 1.5em; } }
 @media screen and (max-width: 495px) {
   .sub-title {
-    font-size: 3em; } }
+    display: none; } }
 @media screen and (max-width: 434px) {
   .main-title {
     font-size: 3em; }
 
   .sub-title {
-    font-size: 2.5em; }
+    display: none; }
 
   .ct-presents {
+    font-size: 2em; }
+
+  .about-title {
     font-size: 2em; } }
 
 /*# sourceMappingURL=main.css.map */
