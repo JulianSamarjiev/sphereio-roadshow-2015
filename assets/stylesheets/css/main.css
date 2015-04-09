@@ -430,7 +430,10 @@ a:hover, a:active, a:focus, a:link, a:visited {
     display: none; }
 
   .cities-info {
-    font-size: 1em; } }
+    font-size: 1em; }
+
+  .social-icons {
+    width: 2em; } }
 @media screen and (max-width: 434px) {
   .main-title {
     font-size: 3em; }
