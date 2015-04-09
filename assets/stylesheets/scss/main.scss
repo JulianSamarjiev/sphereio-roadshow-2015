@@ -443,6 +443,27 @@ $dark-blue: #3B475F;
 /*
 /*****************************************************************************/
 
+// Height
+
+
+@media screen and (max-height: 770px) {
+  .sub-title {
+    display: none;
+  }
+  .sub-title-two {
+    display: none;
+  }
+  .dates-info,
+  .cities-info {
+    margin-bottom: 0;
+  }
+  .reg-button-big {
+    margin-top: 1.5em;
+  }
+}
+
+// Width
+
 @media screen and (max-width: 991px) {
   .main-title {
     font-size: 4em;
@@ -464,19 +485,6 @@ $dark-blue: #3B475F;
   }
   .reg-button-big {
     margin-top: 3em;
-  }
-}
-
-@media screen and (max-height: 770px) {
-  .sub-title-two {
-    display: none;
-  }
-  .dates-info,
-  .cities-info {
-    margin-bottom: 0;
-  }
-  .reg-button-big {
-    margin-top: 1.5em;
   }
 }
 
@@ -514,7 +522,7 @@ $dark-blue: #3B475F;
 
 @media screen and (max-width: 434px) {
   .main-title {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   .sub-title {
     display: none;
@@ -524,6 +532,9 @@ $dark-blue: #3B475F;
   }
   .about-title {
     font-size: 2em;
+  }
+  .reg-button-big {
+    font-size: 1em;
   }
 }
 
