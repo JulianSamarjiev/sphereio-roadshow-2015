@@ -397,23 +397,36 @@ $dark-blue: #3B475F;
 
 /*****************************************************************************/
 /*
+/* CLIENTS
+/*
+/*****************************************************************************/
+
+#clients {
+  padding: 2em 0 0;
+}
+
+/*****************************************************************************/
+/*
 /* SOCIAL LINKS
 /*
 /*****************************************************************************/
 
 #social-links {
   padding: 1em 0;
-  font-size: 1.4em;
 }
 
 .sphere-logo {
-  max-width: 300px;
-  max-height: 300px;
-  padding-bottom: 1em;
+  max-width: 200px;
+}
+
+.list-inline {
+  margin-bottom: 0px;
+  height: 50px;
 }
 
 .social-icons {
-  width: 50px
+  width: 3em;
+  padding-bottom: 50px;
 }
 
 .impressum-link {
