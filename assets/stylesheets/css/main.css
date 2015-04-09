@@ -394,7 +394,10 @@ a:hover, a:active, a:focus, a:link, a:visited {
 
   .ct-presents {
     font-size: 2.5em;
-    margin-top: 0; } }
+    margin-top: 0; }
+
+  .reg-button-big {
+    margin-top: 3em; } }
 @media screen and (max-height: 770px) {
   .sub-title-two {
     display: none; }
@@ -424,7 +427,10 @@ a:hover, a:active, a:focus, a:link, a:visited {
     font-size: 1.5em; } }
 @media screen and (max-width: 495px) {
   .sub-title {
-    display: none; } }
+    display: none; }
+
+  .cities-info {
+    font-size: 1em; } }
 @media screen and (max-width: 434px) {
   .main-title {
     font-size: 3em; }
